@@ -949,9 +949,9 @@
                                     Property="local:ScrollSynchronizer.ScrollGroup"
                                     Value="dgSync" />
                             </Style>
-                            <SolidColorBrush
+                            <!--<SolidColorBrush
                                 x:Key="{x:Static SystemColors.HighlightBrushKey}"
-                                Color="#19000000" />
+                                Color="#19000000" />-->
                         </DataGrid.Resources>
                     </DataGrid>
                 </DockPanel>

@@ -529,4 +529,17 @@ It is a WPF Application based on .NET Framework 4.0 and written with C# language
   <data name="MainWindow_FilesListBoxContextMenu_SelectNone_Header" xml:space="preserve">
     <value>Clear All Files</value>
   </data>
+  <data name="MainWindowVM_commandOpenFileExecute_LogFilesCaption" xml:space="preserve">
+    <value>Log File</value>
+  </data>
+  <data name="ExceptionMessage_FileDoesNotExist" xml:space="preserve">
+    <value>The file does not exist.</value>
+  </data>
+  <data name="ExceptionMessage_FileExtensionError" xml:space="preserve">
+    <value>The file with extenstion {0} does not support.</value>
+    <comment>0 - file ext.</comment>
+  </data>
+  <data name="MessageBoxTitle_Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
 </root>

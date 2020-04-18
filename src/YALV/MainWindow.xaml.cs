@@ -17,6 +17,7 @@
 using System;
 using System.Configuration;
 using System.Globalization;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -73,6 +74,30 @@ namespace YALV
                     _vm.LoadFileList(pathList, add);
                 }
             };
+
+            if(args != null && args.Length > 0)
+            {
+                var path = args[0];
+                // check filename
+                if(File.Exists(path) == false)
+                {
+                    MessageBox.Show(
+                        Properties.Resources.ExceptionMessage_FileDoesNotExist,
+                        Properties.Resources.MessageBoxTitle_Error, 
+                        MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                else if(Path.GetExtension(path) != ".log" && Path.GetExtension(path) != ".xml")
+                {
+                    MessageBox.Show(
+                        Properties.Resources.ExceptionMessage_FileExtensionError,
+                        Properties.Resources.MessageBoxTitle_Error,
+                        MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                else
+                {
+                    _vm.LoadFileList(new string[] { path }, false);
+                }
+            }
         }
 
         public static System.Globalization.CultureInfo ResolvedCulture

@@ -19,7 +19,7 @@ namespace YALV.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resources {
@@ -91,7 +91,7 @@ namespace YALV.Properties {
         ///
         ///Log4Net config file must be setup with XmlLayoutSchemaLog4j layout; just need a few lines in your application config file to configure it to use this format (see examples on right).
         ///
-        ///It is a WPF Application based on .NET Framework 4.0 and writ [rest of string was truncated]&quot;;.
+        ///It is a WPF Application based on .NET Framework 4.0 and written with C#  [rest of string was truncated]&quot;;.
         /// </summary>
         public static string About_Description {
             get {
@@ -555,6 +555,24 @@ namespace YALV.Properties {
         public static string CultureName {
             get {
                 return ResourceManager.GetString("CultureName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The file does not exist..
+        /// </summary>
+        public static string ExceptionMessage_FileDoesNotExist {
+            get {
+                return ResourceManager.GetString("ExceptionMessage_FileDoesNotExist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The file with extenstion {0} does not support..
+        /// </summary>
+        public static string ExceptionMessage_FileExtensionError {
+            get {
+                return ResourceManager.GetString("ExceptionMessage_FileExtensionError", resourceCulture);
             }
         }
         
@@ -1029,6 +1047,15 @@ namespace YALV.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Log File.
+        /// </summary>
+        public static string MainWindowVM_commandOpenFileExecute_LogFilesCaption {
+            get {
+                return ResourceManager.GetString("MainWindowVM_commandOpenFileExecute_LogFilesCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Open Log File.
         /// </summary>
         public static string MainWindowVM_commandOpenFileExecute_Open_Log_File {
@@ -1209,6 +1236,15 @@ namespace YALV.Properties {
         public static string MainWindowVM_updateJumpList_CustomCategoryName {
             get {
                 return ResourceManager.GetString("MainWindowVM_updateJumpList_CustomCategoryName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        public static string MessageBoxTitle_Error {
+            get {
+                return ResourceManager.GetString("MessageBoxTitle_Error", resourceCulture);
             }
         }
         

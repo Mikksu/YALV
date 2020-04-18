@@ -529,4 +529,17 @@ Log4Net 配置必须设为 XmlLayoutSchemaLog4j 布局；在您的应用程序�
   <data name="MainWindow_FilesListBoxContextMenu_SelectNone_Header" xml:space="preserve">
     <value>全部清除</value>
   </data>
+  <data name="MainWindowVM_commandOpenFileExecute_LogFilesCaption" xml:space="preserve">
+    <value>Log 文件</value>
+  </data>
+  <data name="ExceptionMessage_FileDoesNotExist" xml:space="preserve">
+    <value>指定的文件不存在。</value>
+  </data>
+  <data name="ExceptionMessage_FileExtensionError" xml:space="preserve">
+    <value>不支持扩展名为{0}的文件。</value>
+    <comment>0 - 扩展名</comment>
+  </data>
+  <data name="MessageBoxTitle_Error" xml:space="preserve">
+    <value>错误</value>
+  </data>
 </root>

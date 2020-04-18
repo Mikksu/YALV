@@ -33,13 +33,13 @@
         Color="#999" />
     <SolidColorBrush
         x:Key="NormalBrush"
-        Color="#999" />
+        Color="#FFF" />
     <SolidColorBrush
         x:Key="NormalBorderBrush"
         Color="#999" />
     <SolidColorBrush
         x:Key="HorizontalNormalBrush"
-        Color="#999" />
+        Color="#FFF" />
     <SolidColorBrush
         x:Key="HorizontalNormalBorderBrush"
         Color="#999" />
@@ -102,18 +102,10 @@
     </LinearGradientBrush>
 
     <!-- SrollViewer ScrollBar Repeat Buttons (at each end) -->
-    <Style
-        x:Key="ScrollBarLineButton"
-        TargetType="{x:Type RepeatButton}">
-        <Setter
-            Property="SnapsToDevicePixels"
-            Value="True" />
-        <Setter
-            Property="OverridesDefaultStyle"
-            Value="true" />
-        <Setter
-            Property="Focusable"
-            Value="false" />
+    <Style x:Key="ScrollBarLineButton" TargetType="{x:Type RepeatButton}">
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="Focusable" Value="false" />
         <Setter
             Property="Template">
             <Setter.Value>
@@ -122,7 +114,7 @@
                     <Border
                         Name="Border"
                         Margin="1"
-                        CornerRadius="2"
+                        CornerRadius="0"
                         Background="{StaticResource NormalBrush}"
                         BorderBrush="{StaticResource NormalBorderBrush}"
                         BorderThickness="1">
@@ -207,7 +199,7 @@
                 <ControlTemplate
                     TargetType="{x:Type Thumb}">
                     <Border
-                        CornerRadius="2"
+                        CornerRadius="0"
                         Background="{TemplateBinding Background}"
                         BorderBrush="{TemplateBinding BorderBrush}"
                         BorderThickness="1" />
@@ -230,7 +222,7 @@
             </Grid.RowDefinitions>
             <Border
                 Grid.RowSpan="3"
-                CornerRadius="2"
+                CornerRadius="0"
                 Background="LightGray" />
             <RepeatButton
                 Grid.Row="0"
@@ -284,7 +276,7 @@
             </Grid.ColumnDefinitions>
             <Border
                 Grid.ColumnSpan="3"
-                CornerRadius="2"
+                CornerRadius="0"
                 Background="LightGray" />
             <RepeatButton
                 Grid.Column="0"
@@ -342,7 +334,7 @@
                     Value="Auto" />
                 <Setter
                     Property="Height"
-                    Value="18" />
+                    Value="22" />
                 <Setter
                     Property="Template"
                     Value="{StaticResource HorizontalScrollBar}" />
@@ -352,7 +344,7 @@
                 Value="Vertical">
                 <Setter
                     Property="Width"
-                    Value="18" />
+                    Value="22" />
                 <Setter
                     Property="Height"
                     Value="Auto" />

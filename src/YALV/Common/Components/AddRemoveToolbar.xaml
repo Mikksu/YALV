@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns:Properties="clr-namespace:YALV.Properties"
     mc:Ignorable="d"
-    d:DesignHeight="300"
+    d:DesignHeight="100"
     d:DesignWidth="300">
 
     <ToolBar.Resources>
@@ -14,26 +14,19 @@
             TargetType="Image">
             <Setter
                 Property="Width"
-                Value="40" />
+                Value="32" />
         </Style>
         <Style
             TargetType="TextBlock">
-            <Setter
-                Property="FontSize"
-                Value="10" />
-            <Setter
-                Property="TextAlignment"
-                Value="Center" />
+            <Setter Property="FontSize" Value="11" />
+            <Setter Property="TextAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0,5,0,0"/>
         </Style>
         <Style
             x:Key="ToolbarButtonStyle"
             TargetType="{x:Type Button}">
-            <Setter
-                Property="Focusable"
-                Value="False" />
-            <Setter
-                Property="Margin"
-                Value="0,0,10,1" />
+            <Setter Property="Focusable" Value="False" />
+            <Setter Property="Margin" Value="0,0,10,1" />
         </Style>
     </ToolBar.Resources>
 
@@ -42,10 +35,8 @@
         ToolTip="{x:Static Properties:Resources.Common_Components_AddRemoveToolbar_SaveList_Tooltip}"
         Command="{Binding Path=CommandSave}">
         <StackPanel>
-            <Image
-                Source="/Resources/Icons/save.png" />
-            <TextBlock
-                Text="{x:Static Properties:Resources.Common_Components_AddRemoveToolbar_SaveList_Text}" />
+            <Image Source="/Resources/Icons/save.png" />
+            <TextBlock Text="{x:Static Properties:Resources.Common_Components_AddRemoveToolbar_SaveList_Text}" />
         </StackPanel>
     </Button>
     
@@ -54,10 +45,8 @@
         ToolTip="{x:Static Properties:Resources.Common_Components_AddRemoveToolbar_AddNewItem_Tooltip}"
         Command="{Binding Path=CommandAdd}">
         <StackPanel>
-            <Image
-                Source="/Resources/Icons/add.png" />
-            <TextBlock
-                Text="{x:Static Properties:Resources.Common_Components_AddRemoveToolbar_AddNewItem_Text}" />
+            <Image Source="/Resources/Icons/add.png" />
+            <TextBlock Text="{x:Static Properties:Resources.Common_Components_AddRemoveToolbar_AddNewItem_Text}" />
         </StackPanel>
     </Button>
 
@@ -66,10 +55,8 @@
         ToolTip="{x:Static Properties:Resources.Common_Components_AddRemoveToolbar_RemoveSelectedItem_Tooltip}"
         Command="{Binding Path=CommandRemove}">
         <StackPanel>
-            <Image
-                Source="/Resources/Icons/remove.png" />
-            <TextBlock
-                Text="{x:Static Properties:Resources.Common_Components_AddRemoveToolbar_RemoveSelectedItem_Text}" />
+            <Image Source="/Resources/Icons/remove.png" />
+            <TextBlock Text="{x:Static Properties:Resources.Common_Components_AddRemoveToolbar_RemoveSelectedItem_Text}" />
         </StackPanel>
     </Button>
 

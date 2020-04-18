@@ -14,16 +14,13 @@
             TargetType="Image">
             <Setter
                 Property="Width"
-                Value="40" />
+                Value="32" />
         </Style>
         <Style
             TargetType="TextBlock">
-            <Setter
-                Property="FontSize"
-                Value="10" />
-            <Setter
-                Property="TextAlignment"
-                Value="Center" />
+            <Setter Property="FontSize" Value="11" />
+            <Setter Property="TextAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0,5,0,0"/>
         </Style>
         <Style
             x:Key="ToolbarButtonStyle"
@@ -57,7 +54,7 @@
         CommandParameter="ADD">
         <StackPanel>
             <Image
-                Source="/Resources/Icons/add_file.png" />
+                Source="/YALV;component/Resources/Icons/add_file.png" />
             <TextBlock
                 Text="{x:Static Properties:Resources.Common_Components_MainToolbar_AddFile_Text}" />
         </StackPanel>
@@ -69,7 +66,7 @@
         Command="{Binding Path=CommandSelectFolder}">
         <StackPanel>
             <Image
-                Source="/Resources/Icons/select_folder.png" />
+                Source="/Resources/Icons/open_folder.png" />
             <TextBlock
                 Text="{x:Static Properties:Resources.Common_Components_MainToolbar_SelectFolder_Text}" />
         </StackPanel>
@@ -80,10 +77,8 @@
         ToolTip="{x:Static Properties:Resources.Common_Components_MainToolbar_AddFolderPath_Tooltip}"
         Command="{Binding Path=CommandSaveFolder}">
         <StackPanel>
-            <Image
-                Source="/Resources/Icons/save_folder.png" />
-            <TextBlock
-                Text="{x:Static Properties:Resources.Common_Components_MainToolbar_AddFolderPath_Text}" />
+            <Image Source="/Resources/Icons/add_folder.png" />
+            <TextBlock Text="{x:Static Properties:Resources.Common_Components_MainToolbar_AddFolderPath_Text}" />
         </StackPanel>
     </Button>
 
@@ -108,7 +103,7 @@
         Command="{Binding Path=CommandClear}">
         <StackPanel>
             <Image
-                Source="/Resources/Icons/clear.png" />
+                Source="/Resources/Icons/filter.png" />
             <TextBlock
                 Text="{x:Static Properties:Resources.Common_Components_MainToolbar_ClearFilters_Text}" />
         </StackPanel>
@@ -121,7 +116,7 @@
         Command="{Binding Path=CommandDelete}">
         <StackPanel>
             <Image
-                Source="/Resources/Icons/delete.png" />
+                Source="/Resources/Icons/delete_file.png" />
             <TextBlock
                 Text="{x:Static Properties:Resources.Common_Components_MainToolbar_DeleteSelectedFile_Text}" />
         </StackPanel>
