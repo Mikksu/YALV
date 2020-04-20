@@ -8,6 +8,7 @@
     Height="650"
     Width="1250"
     Title="{Binding Path=WindowTitle, Mode=OneWay}"
+    WindowState="Maximized"
     WindowStartupLocation="CenterScreen"
     AllowDrop="True">
 
